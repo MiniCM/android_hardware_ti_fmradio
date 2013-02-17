@@ -234,7 +234,7 @@ public class FmRxApp extends Activity implements View.OnClickListener,
         }
 
         AudioManager audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
-        if (audioManager.isWiredHeadsetOn()) {
+        if ( true /*audioManager.isWiredHeadsetOn()*/) {
             setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
             // Register for FM intent broadcasts.
